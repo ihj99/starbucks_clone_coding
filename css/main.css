@@ -674,6 +674,7 @@ header .badges .badge {
   display: flex;
   justify-content: center;
   align-items: center;
+  right: 6%;
 }
 
 .reserve_magazine_wrap .reserve_visual-pc {
@@ -771,9 +772,12 @@ header .badges .badge {
 
 
 /* Bottom 위*/
+.bottom-master {
+  background-color: rgb(44, 42, 41);
+}
+
 .bottom-main {
   display: flex;
-  background-color: rgb(44, 42, 41);
   justify-content: center;
   align-items: center;
   color: white;
@@ -791,9 +795,6 @@ header .badges .badge {
   margin-right: 75px;
 }
 
-.bottom-sub:hover {
-  text-decoration:white;
-} 
 a:visited {
   color: white; /* 방문한 링크 글씨도 하얀색으로 설정 */
 }

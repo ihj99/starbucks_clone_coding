@@ -33,11 +33,7 @@ const toTopEl = document.querySelector('#to-top')
 window.addEventListener('scroll', _.throttle(function () {
   // 페이지 스크롤 위치가 500px이 넘으면.
   if (window.scrollY > 500) {
-    // Badge 요소 숨기기!
-    gsap.to(badgeEl, .6, {
-      opacity: 0,
-      display: 'none'
-    })
+
     // 상단으로 스크롤 버튼 보이기!
     gsap.to(toTopEl, .2, {
       x: 0
