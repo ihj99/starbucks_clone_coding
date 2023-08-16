@@ -7,6 +7,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 img {
   /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
@@ -798,6 +799,7 @@ a:visited {
 }
 .first {
   margin-bottom: 10px; /* 첫 번째 항목 아래 간격 추가 */
+  color: white;
 }
 
 .rest {
