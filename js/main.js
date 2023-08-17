@@ -60,8 +60,19 @@ toTopEl.addEventListener('click', function () {
   })
 })
 
+const fadeEls = document.querySelectorAll('.visual .fade-in');
 
-
+gsap.to(fadeEls[1], 1, {
+  opacity: 1
+});
+gsap.to(fadeEls[0], 1, {
+delay: 0.7,  
+opacity: 1
+});
+gsap.to(fadeEls[2], 1, {
+  delay: 1.4,
+  opacity: 1
+});
 /**
  * 슬라이드 요소 관리
  */
@@ -94,12 +105,14 @@ new Swiper('.promotion .swiper-container', {
 /**
  * Promotion 슬라이드 토글 기능
  */
+
 // 슬라이드 영역 요소 검색!
 const promotionEl = document.querySelector('.promotion')
+promotionEl.classList.add('hide');
 // 슬라이드 영역를 토글하는 버튼 검색!
 const promotionToggleBtn = document.querySelector('.toggle-promotion')
 // 슬라이드 영역 숨김 여부 기본값!
-let isHidePromotion = false
+let isHidePromotion = true
 // 토글 버튼을 클릭하면,
 promotionToggleBtn.addEventListener('click', function () {
   // 슬라이드 영역 숨김 여부를 반댓값으로 할당!
